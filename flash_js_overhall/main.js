@@ -345,7 +345,7 @@ if (reversed == null) { reversed = false; }
 	// logo
 	this.movieClip_2 = new lib.logo_anim();
 	this.movieClip_2.name = "movieClip_2";
-	this.movieClip_2.setTransform(640.1,210.4,1,1,0,0,0,480.1,72.9);
+	this.movieClip_2.setTransform(640.1,72.9,1,1,0,0,0,480.1,72.9);
 	this.movieClip_2._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.movieClip_2).wait(1).to({_off:false},0).wait(1));
@@ -379,7 +379,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(665.3,613.1,588.2,-117.80000000000001);
+p.nominalBounds = new cjs.Rectangle(665.3,475.6,588.2,19.69999999999999);
 // library properties:
 lib.properties = {
 	id: '6B41238E672D2F418E44C97D76E3ECBD',
