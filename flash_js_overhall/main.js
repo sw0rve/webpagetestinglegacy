@@ -64,6 +64,19 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
+	// timeline functions:
+	this.frame_4 = function() {
+		/* Stop at This Frame
+		The  timeline will stop/pause at the frame where you insert this code.
+		Can also be used to stop/pause the timeline of movieclips.
+		*/
+		
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(4).call(this.frame_4).wait(1));
+
 	// Layer_1
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#FFFFFF").s().p("AppBuIAAirIAUAAIAAAQQAHgKAIgFQAJgEAMAAQAQAAAMAIQANAIAGAPQAGAPAAASQAAATgHAPQgGAPgOAIQgNAJgOAAQgLAAgIgFQgJgEgFgHIAAA8gApLgjQgKAMAAAXQAAAZAJAMQALALANAAQAOAAALgMQAKgMAAgYQAAgYgKgMQgKgMgOAAQgNAAgLANgAGoAxQgPgRAAgfQAAgeAQgSQAQgRAaAAQAZAAAQAQQAQASAAAeIAAAFIhdAAQABAVAKALQALALAQAAQALAAAJgGQAHgHAFgNIAXADQgGAUgOAKQgOALgWAAQgbAAgRgRgAG7glQgKAJgBARIBGAAQgCgQgHgIQgJgMgRAAQgOAAgKAKgAEsA5QgMgIgHgPQgHgPAAgTQAAgSAGgPQAGgPANgJQANgHAPAAQALAAAJAEQAJAFAGAHIAAg9IAVAAIAACsIgUAAIAAgQQgMATgXAAQgPAAgNgJgAExgjQgJALAAAYQAAAYAKAMQAKAMAOAAQAOAAAKgLQAJgMAAgXQAAgZgKgMQgJgMgPAAQgOAAgKAMgABmAxQgQgRAAggQAAgiATgRQAQgNAYAAQAZAAAQAQQARARAAAeQAAAXgHAOQgHAOgOAIQgOAIgQAAQgbAAgQgRgAB2gjQgLAMAAAXQAAAYALAMQAKAMARAAQAPAAALgMQAKgMAAgYQAAgXgKgMQgLgMgPAAQgRAAgKAMgAilAxQgQgRAAgfQAAgeARgSQAQgRAaAAQAZAAAQAQQAQASAAAeIAAAFIheAAQABAVALALQALALAPAAQAMAAAIgGQAIgHAFgNIAWADQgFAUgOAKQgOALgWAAQgcAAgQgRgAiTglQgJAJgCARIBHAAQgCgQgHgIQgKgMgQAAQgOAAgLAKgAkdAxQgQgRAAggQAAgTAHgPQAHgPANgIQAOgHAQAAQAVAAAMAKQAOAKADATIgUADQgDgMgIgHQgHgGgLAAQgQAAgKAMQgKALAAAYQAAAZAKAMQAJALAQAAQAMAAAJgIQAIgIACgPIAVADQgDAVgPANQgNAMgVAAQgaAAgPgRgAmpA3QgLgKAAgQQAAgJAEgHQAEgIAIgFQAGgDAJgCQAGgCAMgCQAagDANgEIAAgGQAAgMgHgGQgHgHgRAAQgPAAgHAGQgHAEgDAOIgVgDQADgNAGgJQAHgHAMgFQAMgEAQAAQARAAAJADQALAEAEAGQAFAFACAJIABAUIAAAbQAAAeABAIQACAHADAIIgVAAQgEgHgBgJQgMAKgLAEQgLAFgMAAQgVAAgLgLgAmAAIQgMABgGADQgFACgDAFQgDAEAAAGQAAAIAGAGQAHAGAMAAQAMAAAKgGQAKgFAEgJQAEgHAAgOIAAgIQgMAFgYADgAImA/IAAh8IATAAIAAASQAHgNAGgEQAGgEAIAAQAKAAAMAGIgHAUQgIgFgIAAQgHAAgGAFQgFAEgDAHQgDALAAAOIAABBgADkA/IAAisIAVAAIAACsgAAoA/IAAhPQAAgQgGgHQgIgHgMAAQgJAAgIAFQgIAEgEAJQgDAIAAAPIAABEIgWAAIAAisIAWAAIAAA9QAPgQAVAAQAOAAALAFQAKAFAEAKQAEAKAAASIAABPgAnjA/IAAisIAWAAIAACsg");
@@ -117,7 +130,7 @@ if (reversed == null) { reversed = false; }
 	this.shape_12.graphics.f("#FFFFFF").s().p("AgsBJIAAiOIAQAAIAAANQAGgIAHgEQAHgEAKAAQANAAAJAHQALAHAFAMQAFANAAAPQAAAQgGALQgFANgLAHQgLAHgMAAQgIAAgHgEQgGgEgFgFIAAAygAgTgvQgJAKAAAUQAAATAIAKQAJAJALAAQALAAAIgKQAJgKAAgTQAAgUgJgKQgIgKgLAAQgKAAgJALg");
 	this.shape_12.setTransform(7.85,16.775);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape}]}).to({state:[{t:this.shape_1}]},2).to({state:[{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2}]},2).to({state:[{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2}]},330).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape}]}).to({state:[{t:this.shape_1}]},2).to({state:[{t:this.shape_12},{t:this.shape_11},{t:this.shape_10},{t:this.shape_9},{t:this.shape_8},{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2}]},2).wait(1));
 
 	this._renderFirstFrame();
 
