@@ -465,7 +465,7 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.Symbol4();
-	this.instance.setTransform(633.1,125.55,0.644,0.644,0,0,0,213.3,-666.6);
+	this.instance.setTransform(633.1,67.5,0.644,0.644,0,0,0,213.3,-666.6);
 	this.instance._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({_off:false},0).wait(1));
@@ -473,25 +473,25 @@ if (reversed == null) { reversed = false; }
 	// icons
 	this.button_1 = new lib.enter();
 	this.button_1.name = "button_1";
-	this.button_1.setTransform(639.9,456.5,1,1,0,0,0,168.1,34.4);
+	this.button_1.setTransform(639.9,282.4,1,1,0,0,0,168.1,34.4);
 	new cjs.ButtonHelper(this.button_1, 0, 1, 2, false, new lib.enter(), 3);
 
 	this.instance_1 = new lib.real_button();
-	this.instance_1.setTransform(987.55,355.8,1,1,0,0,0,62,59.1);
+	this.instance_1.setTransform(987.55,304.2,1,1,0,0,0,62,59.1);
 	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.real_button(), 3);
 
 	this.button_4 = new lib.real_button();
 	this.button_4.name = "button_4";
-	this.button_4.setTransform(760.95,355.8,1,1,0,0,0,62,59.1);
+	this.button_4.setTransform(760.95,304.2,1,1,0,0,0,62,59.1);
 	new cjs.ButtonHelper(this.button_4, 0, 1, 2, false, new lib.real_button(), 3);
 
 	this.instance_2 = new lib.real_button();
-	this.instance_2.setTransform(537.9,355.8,1,1,0,0,0,62,59.1);
+	this.instance_2.setTransform(537.9,304.2,1,1,0,0,0,62,59.1);
 	new cjs.ButtonHelper(this.instance_2, 0, 1, 2, false, new lib.real_button(), 3);
 
 	this.button_3 = new lib.real_button();
 	this.button_3.name = "button_3";
-	this.button_3.setTransform(311.3,355.8,1,1,0,0,0,62,59.1);
+	this.button_3.setTransform(311.3,304.2,1,1,0,0,0,62,59.1);
 	new cjs.ButtonHelper(this.button_3, 0, 1, 2, false, new lib.real_button(), 3);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.button_1}]}).to({state:[{t:this.button_3},{t:this.instance_2},{t:this.button_4},{t:this.instance_1}]},1).wait(1));
@@ -499,7 +499,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(665.3,338.8,588.2,156.5);
+p.nominalBounds = new cjs.Rectangle(665.3,280.8,588.2,115.69999999999999);
 // library properties:
 lib.properties = {
 	id: '6B41238E672D2F418E44C97D76E3ECBD',
